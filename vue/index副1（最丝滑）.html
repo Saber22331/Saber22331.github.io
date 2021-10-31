@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <link rel="stylesheet" href="style副1.css">
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <img src="6.png" alt="" class="img">
+        <a href=""><img src="1.jpg" alt=""></a>
+        <img src="7.png" alt="" class="img">
+        <a href=""><img src="2.jpg" alt=""></a>
+        <img src="8.png" alt="" class="img">
+        <a href=""><img src="3.jpg" alt=""></a>
+        <img src="9.png" alt="" class="img">
+        <a href=""><img src="4.jpg" alt=""></a>
+        <img src="10.png" alt="" class="img">
+        <a href=""><img src="5.jpg" alt=""></a>
+        <button @click="sub"> - </button>
+        <span>{{ num }}</span>
+        <button @click="add"> + </button>
+    </div>
+    <script>
+        var app = new Vue({
+    el: "#app",
+    data: {
+      // 修改的数字
+      num:1
+    },
+    methods: {
+      // 减
+      sub:function(){
+        // console.log("sub");
+        // 递减
+        if(this.num>0){
+          this.num--;
+        }else{
+          alert("别点啦,太小啦!");
+        }
+      },
+      // 加
+      add:function(){
+        // console.log("add");
+        // 累加
+        if(this.num<10){
+          this.num++;
+        }else{
+          alert("别点啦,太大啦!");
+        }
+      }
+    }
+  });
+    </script>
+</body>
+</html>

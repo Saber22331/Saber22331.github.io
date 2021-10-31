@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  div {
+    display: flex;
+  }
+  /* 居中 */
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+  }
+
+  .img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  a img{
+    background-color: #666;
+  
+    height: 60rem;
+    width: 10rem;
+    margin: 1rem;
+  /* 圆角 */
+    border-radius: 20rem;
+  
+    object-fit: cover;
+  /* 过渡时间 */
+    transition: all 1s;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  a img:hover {
+    background-color: #666;
+  /* 长宽高 */
+    height: 60rem;
+    width: 60rem;
+    margin: 1rem;
+  /* 圆角 */
+    border-radius: 3.6rem;
+  
+    object-fit: cover;
+    /* 过渡时间 */
+    transition-duration: all .5;
+  }
+  button {
+    width: 100px;
+    height: 100%;
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  button:hover {
+    color: #b598a1;
+    background-color: #3e3841;
+  }
+  span {
+    height: 100%;
+    font-size: 30px;
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+  }
